@@ -17,7 +17,7 @@ import java.util.*
 class WeatherViewModel : ViewModel() {
 
     private val APPID: String = "cfd2ac5e73d698cac9b7f50917968af9"
-    var City: String = ""
+    var City: String = "globe"
 
 
     private val _name = MutableLiveData<String>()

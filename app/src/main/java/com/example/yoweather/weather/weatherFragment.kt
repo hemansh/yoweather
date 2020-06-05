@@ -49,9 +49,15 @@ class WeatherFragment : Fragment() {
         val dialogLayout = inflater.inflate(R.layout.alert_box, null)
         val editText = dialogLayout.findViewById<EditText>(R.id.editText)
         builder.setView(dialogLayout)
+        builder.setCancelable(false)
         builder.setPositiveButton("OK") { dialogInterface, i ->
             viewModel.City = editText.text.toString()
-            viewModel.getWeatherData()
+            if (viewModel.City==""){
+                viewModel.City="globe"
+                viewModel.getWeatherData()
+            }else{
+                viewModel.getWeatherData()
+            }
         }
         builder.show()
     }
