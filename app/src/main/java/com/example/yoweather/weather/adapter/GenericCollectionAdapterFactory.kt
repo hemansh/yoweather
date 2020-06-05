@@ -10,7 +10,11 @@ class GenericCollectionAdapterFactory<TCollection : MutableCollection<*>>(
     private val createEmptyCollection: () -> MutableCollection<Any>
 ) : JsonAdapter.Factory {
     @Suppress("UNCHECKED_CAST")
-    override fun create(type: Type, annotations: MutableSet<out Annotation>, moshi: Moshi): JsonAdapter<*>? {
+    override fun create(
+        type: Type,
+        annotations: MutableSet<out Annotation>,
+        moshi: Moshi
+    ): JsonAdapter<*>? {
         val paramType = type as? ParameterizedType ?: return null
         if (paramType.rawType.typeName != collectionClazz.typeName) return null
         if (paramType.actualTypeArguments.size != 1) return null

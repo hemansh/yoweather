@@ -100,7 +100,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:weightSum="3"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -135,9 +136,6 @@
                             android:textSize="14dp" />
                     </LinearLayout>
 
-                    <!--                    <Space-->
-                    <!--                        android:layout_width="10dp"-->
-                    <!--                        android:layout_height="wrap_content" />-->
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -172,9 +170,6 @@
                             android:textSize="14dp" />
                     </LinearLayout>
 
-                    <!--                    <Space-->
-                    <!--                        android:layout_width="10dp"-->
-                    <!--                        android:layout_height="wrap_content" />-->
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -210,15 +205,13 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <!--                <Space-->
-                <!--                    android:layout_width="wrap_content"-->
-                <!--                    android:layout_height="10dp" />-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:weightSum="3">
+                    android:weightSum="3"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -235,9 +228,6 @@
                             android:src="@drawable/pressure"
                             android:tint="#FFFFFF" />
 
-                        <!--                        <Space-->
-                        <!--                            android:layout_width="wrap_content"-->
-                        <!--                            android:layout_height="5dp" />-->
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -253,9 +243,6 @@
                             android:textSize="14dp" />
                     </LinearLayout>
 
-                    <!--                    <Space-->
-                    <!--                        android:layout_width="10dp"-->
-                    <!--                        android:layout_height="wrap_content" />-->
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -272,9 +259,6 @@
                             android:src="@drawable/ic_humidity"
                             android:tint="#FFFFFF" />
 
-                        <!--                        <Space-->
-                        <!--                            android:layout_width="wrap_content"-->
-                        <!--                            android:layout_height="5dp" />-->
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -290,9 +274,6 @@
                             android:textSize="14dp" />
                     </LinearLayout>
 
-                    <!--                    <Space-->
-                    <!--                        android:layout_width="10dp"-->
-                    <!--                        android:layout_height="wrap_content" />-->
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -309,9 +290,6 @@
                             android:src="@drawable/visiblity"
                             android:tint="#FFFFFF" />
 
-                        <!--                        <Space-->
-                        <!--                            android:layout_width="wrap_content"-->
-                        <!--                            android:layout_height="5dp" />-->
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -329,18 +307,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!--            <ImageView-->
-            <!--                android:id="@+id/imageView"-->
-            <!--                android:layout_width="wrap_content"-->
-            <!--                android:layout_height="wrap_content"-->
-            <!--                android:layout_above="@+id/overviewContainer"-->
-            <!--                android:layout_below="@+id/addressContainer"-->
-            <!--                android:layout_alignParentStart="true"-->
-            <!--                android:layout_alignParentEnd="true"-->
-            <!--                android:layout_marginStart="140dp"-->
-            <!--                android:layout_marginTop="69dp"-->
-            <!--                android:layout_marginEnd="140dp"-->
-            <!--                android:layout_marginBottom="56dp" />-->
 
 
         </RelativeLayout>

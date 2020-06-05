@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.yoweather.weather
 
 import android.os.Build
@@ -22,9 +24,11 @@ class WeatherFragment : Fragment() {
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
 
-                              savedInstanceState: Bundle?): View? {
+        savedInstanceState: Bundle?
+    ): View? {
 
         val binding = WeatherFragmentBinding.inflate(inflater)
         binding.setLifecycleOwner(this)
@@ -36,22 +40,21 @@ class WeatherFragment : Fragment() {
         setHasOptionsMenu(true)
         return binding.root
     }
+
     @RequiresApi(Build.VERSION_CODES.O)
     fun withEditText() {
         val builder = AlertDialog.Builder(activity!!)
         val inflater = layoutInflater
         builder.setTitle("Enter Your city name")
         val dialogLayout = inflater.inflate(R.layout.alert_box, null)
-        val editText  = dialogLayout.findViewById<EditText>(R.id.editText)
+        val editText = dialogLayout.findViewById<EditText>(R.id.editText)
         builder.setView(dialogLayout)
         builder.setPositiveButton("OK") { dialogInterface, i ->
-            viewModel.City=editText.text.toString()
+            viewModel.City = editText.text.toString()
             viewModel.getWeatherData()
         }
         builder.show()
     }
-
-
 
 
 }

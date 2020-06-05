@@ -1,7 +1,6 @@
 package com.example.yoweather.weather
 
 import com.squareup.moshi.Json
-import kotlin.collections.ArrayList
 
 class WeatherData {
 
@@ -17,7 +16,6 @@ class WeatherData {
     @Json(name = "weather")
 
     var weather = ArrayList<Weather>()
-
 
     @Json(name = "main")
 
