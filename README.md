@@ -7,4 +7,4 @@ This project uses:-
 -Live Data
 -Fragment
 -coroutines
--Retrofit and Mshi
+-Retrofit and Moshi
